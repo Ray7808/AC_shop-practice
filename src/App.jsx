@@ -8,11 +8,11 @@ function App() {
     <div>
       <div id="svg-icons-container" style={{ display: "none" }}></div>
       {/* <!-- header --> */}
-      <Header />
+      {/* <Header /> */}
       {/* <!-- main --> */}
       <Main />
       {/* <!-- footer --> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

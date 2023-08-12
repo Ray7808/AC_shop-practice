@@ -1,41 +1,19 @@
-function Progress() {
+import Phase1 from "./Progress/Phase1.jsx";
+import Phase2 from "./Progress/Phase2.jsx";
+import Phase3 from "./Progress/Phase3.jsx";
+function Progress({ handleNextPhase, handlePrevPhase, phase }) {
+  console.log("phase:", phase);
   return (
     <section className="progress-control-container col col-lg-6 col-sm-12">
-      <section className="button-group col col-12" data-phase="address">
-        <button className="next">
-          下一步
-          <object
-            data="./icons/right-arrow.svg"
-            className="cursor-point"
-          ></object>
-        </button>
-      </section>
-      <section className="button-group col col-12" data-phase="shipping">
-        <button className="prev">
-          <object
-            data="./icons/left-arrow.svg"
-            className="cursor-point"
-          ></object>
-          上一步
-        </button>
-        <button className="next">
-          下一步
-          <object
-            data="./icons/right-arrow.svg"
-            className="cursor-point"
-          ></object>
-        </button>
-      </section>
-      <section className="button-group col col-12" data-phase="credit-card">
-        <button className="prev">
-          <object
-            data="./icons/left-arrow.svg"
-            className="cursor-point"
-          ></object>
-          上一步
-        </button>
-        <button className="next">確認下單</button>
-      </section>
+      {/* Conditionally render phases */}
+      {phase === 1 && <Phase1 handleNextPhase={handleNextPhase} />}
+      {phase === 2 && (
+        <Phase2
+          handleNextPhase={handleNextPhase}
+          handlePrevPhase={handlePrevPhase}
+        />
+      )}
+      {phase === 3 && <Phase3 handlePrevPhase={handlePrevPhase} />}
     </section>
   );
 }

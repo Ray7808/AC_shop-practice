@@ -703,16 +703,16 @@ section.register-container[data-phase="1"] ~ section.progress-control-container 
   display: flex;
 }
 section.register-container[data-phase="1"] form[data-phase=shipping] {
-  display: none;
+  display: flex;
 }
 section.register-container[data-phase="1"] ~ section.progress-control-container .button-group[data-phase=shipping] {
-  display: none;
+  display: flex;
 }
 section.register-container[data-phase="1"] form[data-phase=credit-card] {
-  display: none;
+  display: flex;
 }
 section.register-container[data-phase="1"] ~ section.progress-control-container .button-group[data-phase=credit-card] {
-  display: none;
+  display: flex;
 }
 
 section.register-container[data-phase="2"] .progress-bar[data-order="1"] {
@@ -914,14 +914,16 @@ section.form-body .radio-group #shipping-dhl ~ .radio-info .shipping-text {
   font-weight: 700;
 }
 
-/* section.progress-control-container {
+section.progress-control-container {
   position: absolute;
   left: 0px;
   right: 0px;
   bottom: 0px;
-} */
+}
 
 section.button-group {
+  position:relative;
+  top:96px;
   padding-top: 24px;
   border-top: 1px solid #E6E6EB;
 }
@@ -1106,6 +1108,11 @@ section.cart-info .price {
   }
   section.cart-info {
     padding-bottom: 16px;
+  }
+  section.button-group{
+    position: relative;
+    top: 0px;
+    
   }
 }
 footer.site-footer {

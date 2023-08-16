@@ -13,14 +13,14 @@ function Register({ phase }) {
       <section className="progress-container col col-12">
         <span className="progress-group" data-phase="address">
           <span className="progress-icon">
-            <span className="text">1</span>
+            <span className="text">{phase > 1 ? "V" : "1"}</span>
           </span>
           <span className="progress-label">寄送地址</span>
         </span>
         <span className="progress-bar" data-order="1"></span>
         <span className="progress-group" data-phase="shipping">
           <span className="progress-icon">
-            <span className="text">2</span>
+            <span className="text">{phase > 2 ? "V" : "2"}</span>
           </span>
           <span className="progress-label">運送方式</span>
         </span>

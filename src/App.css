@@ -596,7 +596,7 @@ section.register-container[data-phase="3"] .progress-group[data-phase=shipping] 
   display: inline-block;
 }
 section.register-container[data-phase="3"] .progress-group[data-phase=shipping] .progress-icon .text, section.register-container[data-phase="3"] .progress-group[data-phase=address] .progress-icon .text, section.register-container[data-phase="2"] .progress-group[data-phase=address] .progress-icon .text {
-  display: none;
+  display: inline-block;
 }
 
 section.register-container[data-phase="2"] .progress-group[data-phase=credit-card] .progress-icon .icon, section.register-container[data-phase="1"] .progress-group[data-phase=credit-card] .progress-icon .icon, section.register-container[data-phase="1"] .progress-group[data-phase=shipping] .progress-icon .icon, section.register-container[data-phase="3"] .progress-group[data-phase=credit-card] .progress-icon .icon, section.register-container[data-phase="2"] .progress-group[data-phase=shipping] .progress-icon .icon, section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-icon .icon {
@@ -604,6 +604,7 @@ section.register-container[data-phase="2"] .progress-group[data-phase=credit-car
 }
 section.register-container[data-phase="2"] .progress-group[data-phase=credit-card] .progress-icon .text, section.register-container[data-phase="1"] .progress-group[data-phase=credit-card] .progress-icon .text, section.register-container[data-phase="1"] .progress-group[data-phase=shipping] .progress-icon .text, section.register-container[data-phase="3"] .progress-group[data-phase=credit-card] .progress-icon .text, section.register-container[data-phase="2"] .progress-group[data-phase=shipping] .progress-icon .text, section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-icon .text {
   display: inline-block;
+  
 }
 
 section.register-container[data-phase="3"] .progress-group[data-phase=credit-card] .progress-label, section.register-container[data-phase="2"] .progress-group[data-phase=shipping] .progress-label, section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-label, section.register-container[data-phase="3"] .progress-group[data-phase=shipping] .progress-label, section.register-container[data-phase="3"] .progress-group[data-phase=address] .progress-label, section.register-container[data-phase="2"] .progress-group[data-phase=address] .progress-label, section.register-container[data-phase="3"] .progress-group[data-phase=credit-card] .progress-icon, section.register-container[data-phase="2"] .progress-group[data-phase=shipping] .progress-icon, section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-icon {
@@ -690,7 +691,6 @@ section.register-container[data-phase="1"] .progress-bar[data-order="2"] {
   border-color: var(--undone-progress-border);
 }
 section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-icon {
-  /* background-color: var(--pg-addr-bg-color); */
   border-color: var(--pg-addr-bg-color);
 }
 section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-icon .text {
@@ -726,7 +726,7 @@ section.register-container[data-phase="2"] .progress-group[data-phase=address] .
   border-color: var(--pg-addr-bg-color);
 }
 section.register-container[data-phase="2"] .progress-group[data-phase=address] .progress-icon .text {
-  color: var(--pg-addr-color);
+  color: var(--progress-done-color);
 }
 section.register-container[data-phase="2"] form[data-phase=address] {
   display: none;
@@ -756,16 +756,17 @@ section.register-container[data-phase="3"] .progress-bar[data-order="2"] {
 section.register-container[data-phase="3"] .progress-group[data-phase=address] .progress-icon {
   background-color: var(--pg-addr-bg-color);
   border-color: var(--pg-addr-bg-color);
+  
 }
 section.register-container[data-phase="3"] .progress-group[data-phase=address] .progress-icon .text {
-  color: var(--pg-addr-color);
+  color: var(--progress-done-color);
 }
 section.register-container[data-phase="3"] .progress-group[data-phase=shipping] .progress-icon {
   background-color: var(--pg-addr-bg-color);
   border-color: var(--pg-addr-bg-color);
 }
 section.register-container[data-phase="3"] .progress-group[data-phase=shipping] .progress-icon .text {
-  color: var(--pg-addr-color);
+  color: var(--progress-done-color);
 }
 section.register-container[data-phase="3"] form[data-phase=address] {
   display: none;

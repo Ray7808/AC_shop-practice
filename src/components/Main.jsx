@@ -18,7 +18,7 @@ function Main() {
     <main className="site-main">
       <div className="main-container">
         {/* <!-- register --> */}
-        <Register />
+        <Register phase={phase} />
         {/* <!-- cart --> */}
         <Cart />
         {/* <!-- progress --> */}

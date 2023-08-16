@@ -79,7 +79,7 @@ body {
   --progress-current-color: #2A2A2A;
   --progress-done-color: #FFFFFF;
   --progress-undone-color: #AFB1BD;
-  --pg-addr-color: #FFFFFF;
+  --pg-addr-color: #000000;
   --pg-addr-bg-color: #2A2A2A;
   --input-label: #808080;
   --input-border: #4A4A4A;
@@ -690,7 +690,7 @@ section.register-container[data-phase="1"] .progress-bar[data-order="2"] {
   border-color: var(--undone-progress-border);
 }
 section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-icon {
-  background-color: var(--pg-addr-bg-color);
+  /* background-color: var(--pg-addr-bg-color); */
   border-color: var(--pg-addr-bg-color);
 }
 section.register-container[data-phase="1"] .progress-group[data-phase=address] .progress-icon .text {
@@ -758,6 +758,13 @@ section.register-container[data-phase="3"] .progress-group[data-phase=address] .
   border-color: var(--pg-addr-bg-color);
 }
 section.register-container[data-phase="3"] .progress-group[data-phase=address] .progress-icon .text {
+  color: var(--pg-addr-color);
+}
+section.register-container[data-phase="3"] .progress-group[data-phase=shipping] .progress-icon {
+  background-color: var(--pg-addr-bg-color);
+  border-color: var(--pg-addr-bg-color);
+}
+section.register-container[data-phase="3"] .progress-group[data-phase=shipping] .progress-icon .text {
   color: var(--pg-addr-color);
 }
 section.register-container[data-phase="3"] form[data-phase=address] {
